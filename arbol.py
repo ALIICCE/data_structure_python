@@ -26,3 +26,24 @@ class ArbolBinario:
                 nodo.derecha = Nodo(valor)
             else:
                 self._insertar_recursivo(nodo.derecha, valor)
+
+    def mostrar_en_orden(self):
+        self._in_orden(self.raiz)
+
+    def _in_orden(self, nodo):
+        if nodo is not None:
+            self._in_orden(nodo.izquierda)
+            print(nodo.valor, end=' ')
+            self._in_orden(nodo.derecha)
+
+#Ejemplo de uso
+arbol = ArbolBinario()
+
+#Insertar valores en el arbol
+valores = [8, 3, 10, 25, 6, 14, 4, 7]
+for v in valores:
+    arbol.insertar(v)
+
+#Mostrar datos en orden
+print("Recorrido en orden:")
+arbol.mostrar_en_orden()

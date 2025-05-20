@@ -1,4 +1,3 @@
-
 class MiLista:
     def __init__(self):
         self.lista = []
@@ -14,3 +13,17 @@ class MiLista:
     
     def mostrar(self):
         print(self.lista)
+
+#Ejemplo de uso
+#Mandamos a llamar a la clase
+lista = MiLista()
+
+#Definiciones dentro de la clase
+lista.agregar("Alumnos")
+lista.agregar("Profesores")
+lista.mostrar()
+
+lista.eliminar("Alumnos")
+lista.mostrar()
+
+lista.eliminar("Pizarron")  #Este no se encuentra en el arreglo

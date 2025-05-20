@@ -14,3 +14,16 @@ class Pila:
     
     def esta_vacia(self):
         return len(self.items) == 0
+
+#Ejemplo de uso
+pila = Pila()
+
+#Apilando los elementos
+pila.apilar("A")
+pila.apilar("B")
+pila.apilar("C")
+
+print(pila.desapilar())
+print(pila.desapilar())
+print(pila.desapilar())
+print(pila.desapilar())

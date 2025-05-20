@@ -14,3 +14,18 @@ class Cola:
     
     def esta_vacia(self):
         return len(self.cola) == 0
+    
+#Ejemplo de uso
+q = Cola()
+
+# Poner en cola los elementos
+q.encolar("uno")
+q.encolar("dos")
+q.encolar("tres")
+
+# Quitar de la cola los elementos
+print("Desencolando elementos:")
+print(q.desencolar())  # uno
+print(q.desencolar())  # dos
+print(q.desencolar())  # tres
+print(q.desencolar())  # debería decir que esta vacia
